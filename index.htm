@@ -9,7 +9,17 @@
 </head>
 <body>
     <div class="container">
-        
+        <div class="x">
+            <h3 id="current-time"></h3>
+            <p>Lost Time is never fond again</p>
+        </div>
     </div>
+    <script>
+        let time=document.getElementById("current-time"); 
+        setInterval(()=>{
+             let ontime= new Date();
+             time.innerHTML= ontime.toLocaleTimeString();
+        },1000)
+    </script>
 </body>
 </html>
